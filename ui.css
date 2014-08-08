@@ -1,0 +1,24 @@
+.draggable {
+	width			: 100px;
+	height			: 100px;
+	cursor			: move;
+	border			: 1px solid #CCCCCC;
+	background-color: #CCDDFF;
+	font-size		: small;
+	float			: left;
+	margin			: 1em;
+}
+
+.droppable {
+	width			: 150px;
+	height			: 150px;
+	border			: 1px solid #CCCCCC;
+	background-color: #EE33FF;
+	font-size		: small;
+	float			: left;
+	margin			: 1em;
+}
+
+.drop-hover {
+	background-color: #FF0000;
+}

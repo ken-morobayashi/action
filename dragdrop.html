@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="./favicon.png">
+    
+        <title></title>
+        
+        <link href="./ui.css" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+        
+        <div class="Example" style="height:200px">
+            <div class="droppable droppable1">droppable1</div>
+            <div class="draggable">drag</div>
+            <div class="droppable droppable2">droppable2</div>
+        </div> 
+    
+    
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+        <script src="./jquery-ui-1.10.4/js/jquery-ui-1.10.4.min.js"></script>
+        <script src="./jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.droppable1').droppable();
+            $('.draggable').draggable({revert:'invalid'});
+            $('.droppable2').droppable({hoverClass:'drop-hover'});
+            $('.droppable2').droppable({drop:function(){alert('drop');}});
+        });
+        </script>
+    </body>
+</html>
